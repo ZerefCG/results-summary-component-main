@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Hanken Grotesk', sans-serif; ;
+    src: url(../assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+    background-color: var(--paleblue);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+/*=============== VARIABLES ===============*/
+
+:root{
+    --white:hsl(0, 0%, 100%);
+    --paleblue:hsl(221, 100%, 96%);
+    --lightlavander:hsl(241, 100%, 89%);
+    --darkgrayblue:hsl(224, 30%, 27%);
+
+    /* gradient for cards */
+
+    /* (background) */
+    --Light-slate-blue: hsl(252, 100%, 67%);
+    --Light-royal-blue: hsl(241, 81%, 54%);
+
+    /* (circle) */
+    --Violet-blue:hsla(256, 72%, 46%, 1);
+    --Persian-blue:hsla(241, 72%, 46%, 0);
+
+    /* summary colors */
+
+    --Light-red: hsl(0, 100%, 67%);
+    --Orange-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+    
+}
+
+
+.card{
+    width: 65rem;
+    box-shadow: 3px 1px 10px rgba(0,0,0,0.7);
+    display: flex;
+    font-size: 1.6rem;
+}
+
+
+/* sections of card styles general */
+
+.card__section{
+    padding: 5rem;
+    width: 50%;
+}
+
+/* card h2 styles general summary and your result */
+
+.card__h2{
+    font-size: 1.8rem;
+    margin-bottom: 3.2rem;
+}
+
+/* border radius for redonded borders and overflow-hidden  */
+.card, .results{
+    border-radius: 2.6rem;
+    overflow: hidden;
+}
+
+/* results styles */
+
+.results{
+    background-image: linear-gradient(to bottom, var(--Light-slate-blue), var(--Light-royal-blue));
+    text-align: center;
+    color: var(--white);
+    
+}
+
+/* results fonts color and styles */
+.results__h2--color,
+.results__p{
+    color: var(--lightlavander);
+    font-weight: 600;
+}
+
+.results__p--weight{
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+/* results graphic style */
+
+.results__h2{
+    font-size: 5rem;
+}
+
+.results__h2-size{
+    font-size: 3rem;
+    margin:2.2rem 0 ;
+}
+
+/* a width and height for border-radius in circle */
+.results__points{
+    width: 15rem;
+    height: 15rem;
+    padding: 2rem;
+    background-image: linear-gradient(to bottom, var(--Violet-blue), var(--Persian-blue));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto;
+   
+}
+
+/*=============== SUMMARY STYLES ===============*/
+
+.summary{
+    background-color: var(--white);
+}
+
+/* TITLE CHANGE COLOR */
+.summary__h2--color{
+    color: var(--darkgrayblue);
+}
+
+
+/* items of summary */
+
+.summary__item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    margin-bottom: 4rem;
+}
+
+.summary__description{
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* colors of summary items */
+
+.summary__name--red{
+    color: var(--Light-red);
+}
+.summary__name--yellow{
+    color: var(--Orange-yellow);
+}
+.summary__name--green{
+    color: var(--Green-teal);
+}
+.summary__name--blue{
+    color: var(--Cobalt-blue);
+}
+
+/* color of numbers on right side */
+
+.summary__statistics{
+    color: var(--darkgrayblue);
+   
+}
+
+.summary_number{
+   --darkgrayblue:hsla(224, 30%, 27%,0.5);
+    color: var(--darkgrayblue);
+}
+
+/* ===button styles=== */
+
+.button{
+    display: block;
+    margin-top: 2rem;
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--darkgrayblue);
+    font-weight: bold;
+    padding: 1.2rem 2rem;
+    text-align: center;
+    border-radius: 3rem;
+    transition: 0.2s ease-in-out;
+    
+}
+
+.button:hover{
+    --darkgrayblue:rgb(63, 78, 121);
+    color: var(--white);
+}
+
+.button:active{
+    background-image: linear-gradient(to bottom, var(--Light-slate-blue), var(--Light-royal-blue));
+}
+
+
+/*=============== MEDIA QUERIES ===============*/
+
+@media screen and (max-width:560px){
+    .card{
+        flex-direction: column;
+        
+    }
+
+    .card__section{
+        width: 100%;
+    }
+}
