@@ -29,12 +29,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./SolutionScreen.png.jpg)
+![(./SolutionScreen.png.jpg)]
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/ZerefCG/results-summary-component-main)
-- Live Site URL: [Add live site URL here](https://zerefcg.github.io/results-summary-component-main/)
+- Solution URL: [https://github.com/ZerefCG/results-summary-component-main]()
+- Live Site URL: [https://zerefcg.github.io/results-summary-component-main/]()
 
 ## My process
 
