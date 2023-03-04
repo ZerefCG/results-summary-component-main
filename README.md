@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![My solution of this challenge](../results-summary-component-main/SolutionScreen.png)
+![My solution of this challenge](/results-summary-component-main/SolutionScreen.png)
 
 ### Links
 
