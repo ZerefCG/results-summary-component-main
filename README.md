@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![My solution of this challenge](/results-summary-component-main/SolutionScreen.png)
+![Design preview for the Results summary component coding challenge](./design/desktop-preview.jpg)
 
 ### Links
 
