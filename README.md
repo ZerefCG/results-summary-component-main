@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![(./SolutionScreen.png.jpg)]
+![(../results-summary-component-main/SolutionScreen.png)]
 
 ### Links
 
